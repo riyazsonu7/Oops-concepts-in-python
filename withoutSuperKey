@@ -1,0 +1,11 @@
+#without a superfunction
+
+class A:
+    def __init__(self,name):
+        print("parent init",name)
+
+class B(A):
+    def __init__(self):
+        print("child init")
+        A.__init__(self,'riyaz')
+obj=B()
