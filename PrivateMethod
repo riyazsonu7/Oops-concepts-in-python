@@ -1,0 +1,16 @@
+#private method and access the private method inside
+# the class using
+class example:
+    def __init__(self):
+        self.x=1
+        self._x=2
+        self.__x=3
+    def publicMethod(self):
+        print(self.x)
+        print(self._x)
+        print(self.__x)
+        self.__privateMethod()
+    def __privateMethod(self):
+        print("inside private")
+obj=example()
+obj.publicMethod()
