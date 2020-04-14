@@ -1,0 +1,23 @@
+class Student:
+    def __init__(self):
+        self.name='riyaz'
+        self.age=21
+        self.marks=85
+        #print('__init__ is called')
+    def talk(self):
+        print("name - ",self.name)
+        print('age - ',self.age)
+        print('marks - ',self.marks)
+
+
+
+s1=Student()
+# print(s1.name)
+# s1.talk()
+# s1.name="ahmed"
+# print(s1.name)
+# s2=Student()
+# print(s2.name)
+s2=Student()
+print(id(s1))
+print(id(s2))
