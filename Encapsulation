@@ -1,0 +1,20 @@
+# In this task we use private method(__newSpeed) and how to use the by getters
+# and setters and also to change the private variable without setter
+#we cannot directly access  the private variables out side the class
+class speed:
+    def __init__(self):
+        self.speed=80
+        self.__newSpeed=100
+    def getNewSpeed(self):
+        return self.__newSpeed
+    def setNewSpeed(self,new_fast):
+        self.__newSpeed=new_fast
+
+
+s1=speed()
+print(s1.speed)
+# s1.__newSpeed=22
+# print(s1.__newSpeed)
+print(s1.getNewSpeed())
+s1.setNewSpeed(34)
+print(s1.getNewSpeed())
