@@ -1,0 +1,18 @@
+class Python:
+    def __init__(self,pages):
+        self.pages=pages
+    def __add__(self, other):
+        return self.pages + other.pages
+    def __mul__(self, other):
+        return self.pages * other.pages
+    def __gt__(self, other):
+        return self.pages > other.pages
+class Java:
+    def __init__(self,pages):
+        self.pages=pages
+
+p=Python(123)
+J=Java(120)
+print(p + J)
+print(p * J)
+print(p >  J)
