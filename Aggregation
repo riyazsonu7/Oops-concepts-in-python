@@ -1,0 +1,23 @@
+class Salary:
+    def __int__(self, pay, reward):
+        self.pay = pay
+        self.reward = reward
+
+    def annual_salary(self):
+        return (self.pay * 12) + self.reward
+
+
+class Employee:
+    def __int__(self, name, postion, sal):
+        self.name = name
+        self.postion = postion
+        self.final_sal = sal
+
+    def final_salary_m(self):
+        return self.final_sal.annual_salary()
+
+
+sal = Salary(1200, 300)
+
+emp = Employee('nick', 'devloper', sal)
+print(emp.final_salary_m())
