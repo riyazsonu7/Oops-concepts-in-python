@@ -1,0 +1,13 @@
+result=None
+x = int(input('Enter a Number 1 : '))
+# x=input('enter a number 1')
+y = int(input('Enter a number 2 : '))
+
+try:                     # try will run the code
+   result=x/y
+except Exception as e:   #execute the code when there is an exception
+    print("There a error",e)
+except ZeroDivisionError as e:
+    print('there is a erroe ',e)
+print('------')
+print(result)
