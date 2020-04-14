@@ -1,0 +1,16 @@
+class Tea:
+    def __init__(self,temprature):
+        self.temprature=temprature
+
+
+    def drink_tea(self):
+        if self.temprature > 85:
+            raise Exception('Tea to hot')  # or simple you can wright Exception
+        elif self.temprature < 60:
+            print('cold to drink')
+        else:
+            print('ok to drink')
+
+cup=Tea(89)
+
+cup.drink_tea()
