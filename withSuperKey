@@ -1,0 +1,9 @@
+class Parent:
+    def __int__(self,name):
+        print('parent init',name)
+class Child(Parent):
+    def __int__(self):
+        print('child init')
+        super.__init__('riyaz')
+obj=Child()
+print(Child.__mro__)
