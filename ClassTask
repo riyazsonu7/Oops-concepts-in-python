@@ -1,0 +1,18 @@
+class Student:
+    def __init__(self, n, a, **m):
+        self.name=n
+        self.age=a
+        self.mark=m
+
+    def display(self):
+        print('name is - ',self.name)
+        print('age is - ',self.age)
+        print('mark is - ',self.mark)
+#for key value
+s1=Student('riyaz',20,english=85,science=90,math=55,social=69)
+#for tuple we have to use *m and for key **m
+# s1=student('riyaz',21,90,96,63)
+s1.display()
+print('--------------')
+s2=Student('jhon',23,english=85,science=90,math=55,social=69)
+s2.display()
