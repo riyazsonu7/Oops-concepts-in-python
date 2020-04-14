@@ -1,0 +1,12 @@
+# why can't we use multi constructor
+
+class Student:
+    def __init__(c):
+        print('first init')
+        #c.name=n
+    def __init__(c):
+        print('second init')
+    def display(c):
+        print('hii')#,c.name)
+s1=Student()#'riyaz')
+s1.display()
